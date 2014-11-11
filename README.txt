@@ -37,6 +37,17 @@ Example: does this regexp match email addresses?
 
 %r{\w+@[\w.]+}.match "bob@gmail.com"
 
+Anchors
+=======
+
+^  beginning of line
+$  end of line
+\A beginning of string
+\z end of string
+\Z end of chomped string
+\b word boundary
+\B non-word boundary
+
 Groups & backreferences
 =======================
 
@@ -55,3 +66,24 @@ Use with other methods
 String#sub, String#gsub
 String#scan
 String#split
+
+Fancy stuff
+===========
+
+Zero-width assertions:
+(?=...) positive lookahead
+(?!...) negative lookahead
+(?<=..) positive lookbehind
+(?<!..) negative lookbehind
+
+Laziness: ?
+
+Problems
+========
+
+Convert Last, First to First Last.
+Identify numbers divisible by five.
+Identify numbers divisible by three. (Hard)
+Select sentences: "Here is a sentence. Here is another sentence. And so on."
+COrrect TWo INitial CAps BUT NOT THIS.
+
