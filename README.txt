@@ -3,7 +3,7 @@ Notes on Regexps
 Basics
 ======
 
-Making a regexp in Ruby: /abc/, %r{abc}, or Regexp.new(abc)
+Making a regexp in Ruby: /abc/, %r{abc}, or Regexp.new('abc')
 s =~ /abc/
 /abc/.match(s)
 /abc/ === s
